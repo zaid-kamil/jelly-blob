@@ -22,3 +22,7 @@
     * **Customizable Parameters:** Fully configurable options for animation duration, size, amplitude, point count, etc.
     * **Modular Architecture:** Organized using a Melos monorepo setup, ensuring maintainability and ease of contribution.
     * **Comprehensive Documentation:** Includes usage examples, detailed API documentation, and unit tests for reliability.
+
+## Unreleased
+
+- Fix: Rename `blob_contaienr.dart` to `blob_container.dart`, update exports/imports in example, and fix related lints.
