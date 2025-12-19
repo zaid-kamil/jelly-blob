@@ -17,7 +17,7 @@ class BlobButton extends StatefulWidget {
   final double baseRadiusFactor;
 
   const BlobButton({
-    Key? key,
+    super.key,
     required this.onPressed,
     required this.child,
     required this.duration,
@@ -29,10 +29,10 @@ class BlobButton extends StatefulWidget {
     this.pointCount = 12,
     this.amplitude = 5.0,
     this.baseRadiusFactor = 0.35,
-  }) : super(key: key);
+  });
 
   @override
-  _BlobButtonState createState() => _BlobButtonState();
+  State<BlobButton> createState() => _BlobButtonState();
 }
 
 class _BlobButtonState extends State<BlobButton>
@@ -42,10 +42,8 @@ class _BlobButtonState extends State<BlobButton>
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(
-      duration: widget.duration,
-      vsync: this,
-    )..repeat();
+    _controller = AnimationController(duration: widget.duration, vsync: this)
+      ..repeat();
   }
 
   @override

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:jelly_blob/blob_animation/blob_contaienr.dart';
+import 'package:jelly_blob/jelly_blob.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
